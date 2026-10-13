@@ -1,0 +1,264 @@
+<svg width="8285" height="1307" viewBox="0 0 8285 1307" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+svg { overflow: visible; }
+@keyframes kf_Group_5_transform_0 {
+  0% {
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.995) translate(-47.5px, -47.5px);
+  }
+  8.44% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.04) translate(-47.5px, -47.5px);
+  }
+  18.14% {
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  65.52% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  74.49% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.04) translate(-47.5px, -47.5px);
+  }
+  84.19% {
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  100% {
+    transform: translateX(65.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+}
+#Group_5 {
+  transform-origin: 0 0;
+  animation: kf_Group_5_transform_0 2s linear infinite;
+}
+@keyframes kf_Vector_445_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(462.98px) translateY(307.535px) translateX(2.461px) translateY(0px) translate(20.671px, 137.686px) scaleX(0.8) scaleY(1) translate(-20.671px, -137.686px);
+  }
+  14.85% {
+    transform: translateX(462.98px) translateY(307.535px) translateX(2.461px) translateY(0px) translate(20.671px, 137.686px) scaleX(0.93) scaleY(1) translate(-20.671px, -137.686px);
+  }
+  22.92% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(462.98px) translateY(307.535px) translateX(2.461px) translateY(0px) translate(20.671px, 137.686px) scaleX(1) scaleY(1) translate(-20.671px, -137.686px);
+  }
+  47.14% {
+    transform: translateX(462.98px) translateY(307.535px) translateX(2.461px) translateY(0px) translate(20.671px, 137.686px) scaleX(0.8) scaleY(1) translate(-20.671px, -137.686px);
+  }
+  100% {
+    transform: translateX(462.98px) translateY(307.535px) translateX(2.461px) translateY(0px) translate(20.671px, 137.686px) scaleX(0.8) scaleY(1) translate(-20.671px, -137.686px);
+  }
+}
+#Vector_445 {
+  transform-origin: 0 0;
+  animation: kf_Vector_445_transform_0 2s linear infinite;
+}
+@keyframes kf_Vector_444_transform_0 {
+  0% {
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(1) translate(-133.258px, -142.105px);
+  }
+  0.25% {
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(1) translate(-133.258px, -142.105px);
+  }
+  22.48% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(1) translate(-133.258px, -142.105px);
+  }
+  47.99% {
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(0.97) translate(-133.258px, -142.105px);
+  }
+  68.31% {
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(0.97) translate(-133.258px, -142.105px);
+  }
+  100% {
+    transform: translateX(242.98px) translateY(468.223px) translate(133.258px, 142.105px) scaleX(1) scaleY(0.97) translate(-133.258px, -142.105px);
+  }
+}
+#Vector_444 {
+  transform-origin: 0 0;
+  animation: kf_Vector_444_transform_0 2s linear infinite;
+}
+@keyframes kf_Vector_443_transform_0 {
+  0% {
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(1) translate(-151.677px, -212.143px);
+  }
+  0.25% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(1) translate(-151.677px, -212.143px);
+  }
+  22.8% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(0.97) translate(-151.677px, -212.143px);
+  }
+  48% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(1) translate(-151.677px, -212.143px);
+  }
+  48.2% {
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(0.97) translate(-151.677px, -212.143px);
+  }
+  100% {
+    transform: translateX(194.73px) translateY(0px) translate(151.677px, 212.143px) scaleX(1) scaleY(0.97) translate(-151.677px, -212.143px);
+  }
+}
+#Vector_443 {
+  transform-origin: 0 0;
+  animation: kf_Vector_443_transform_0 2s linear infinite;
+}
+@keyframes kf_Group_4_transform_0 {
+  0% {
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.995) translate(-47.5px, -47.5px);
+  }
+  8.44% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.04) translate(-47.5px, -47.5px);
+  }
+  18.14% {
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  65.52% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  74.49% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(0.04) translate(-47.5px, -47.5px);
+  }
+  84.19% {
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+  100% {
+    transform: translateX(111.48px) translateY(314.035px) translate(47.5px, 47.5px) scaleX(1) scaleY(1) translate(-47.5px, -47.5px);
+  }
+}
+#Group_4 {
+  transform-origin: 0 0;
+  animation: kf_Group_4_transform_0 2s linear infinite;
+}
+</style>
+<g id="R__gfarvet_-_Sv__mmesk__rm">
+<path id="Vector_446" transform="translate(140.98 587.285)" d="M126.75 104C88.704 87.5233 63.1801 69.4569 0 0C15.6593 9.85363 24.0335 14.1302 35.75 11.75C52.1021 34.8956 65.6394 38.9609 90.5 44.75C112.349 63.5615 119.27 77.1073 126.75 104Z" fill="#C9BFA2"/>
+<path id="Vector_449" transform="translate(174.48 613.785)" d="M88.75 63C76.4889 58.6964 59.4717 49.4116 0 0C21.7186 8.75162 34.0396 13.2348 57 18.25C75.9051 34.7509 81.469 41.5955 88.75 63Z" fill="#A77E06"/>
+<g id="Group_5" transform="translate(65.4802 314.035)">
+<circle id="Ellipse_120" cx="47.5" cy="47.5" r="47.5" fill="white"/>
+<ellipse id="Ellipse_125" transform="translate(18.9944 14.8351)" cx="32.1407" cy="32.4251" rx="32.1407" ry="32.4251" fill="black"/>
+</g>
+<g id="Vector_445" filter="url(#filter0_i_371_268)" transform="translate(462.98 307.535)">
+<path d="M28 110.022C16.8802 112.066 10.7206 112.298 0 110.022C6.8141 131.827 7.23603 142.772 0 159.272C10.5321 155.746 25.5 160.272 32.75 164.022C40 167.772 89.5 275.022 109 266.272C127.091 263.462 176.059 67.7702 126.75 0.522148C111.5 -8.72863 39.1198 107.978 28 110.022Z" id="Vector_445_bg_0" fill="#0F182E">
+</path>
+<path d="M28 110.022C16.8802 112.066 10.7206 112.298 0 110.022C6.8141 131.827 7.23603 142.772 0 159.272C10.5321 155.746 25.5 160.272 32.75 164.022C40 167.772 89.5 275.022 109 266.272C127.091 263.462 176.059 67.7702 126.75 0.522148C111.5 -8.72863 39.1198 107.978 28 110.022Z" stroke="black"/>
+</g>
+<g id="Vector_444" filter="url(#filter1_i_371_268)" transform="translate(242.98 468.223)">
+<path d="M188.75 282.062C161.6 295.836 63.51 242.851 0 137.563C95.7721 129.944 140.64 97.9715 211 10.5625C219 7.06256 230.07 -6.5286 252 3.81254C273.93 14.1537 270.212 234.144 246.25 247.563C222.288 260.981 215.9 268.289 188.75 282.062Z" id="Vector_444_bg_0" fill="#423455">
+</path>
+<path d="M188.75 282.062C161.6 295.836 63.51 242.851 0 137.563C95.7721 129.944 140.64 97.9715 211 10.5625C219 7.06256 230.07 -6.5286 252 3.81254C273.93 14.1537 270.212 234.144 246.25 247.563C222.288 260.981 215.9 268.289 188.75 282.062Z" fill="url(#pattern0_371_268)"/>
+<path d="M188.75 282.062C161.6 295.836 63.51 242.851 0 137.563C95.7721 129.944 140.64 97.9715 211 10.5625C219 7.06256 230.07 -6.5286 252 3.81254C273.93 14.1537 270.212 234.144 246.25 247.563C222.288 260.981 215.9 268.289 188.75 282.062Z" stroke="black"/>
+</g>
+<g id="Vector_443" filter="url(#filter2_ii_371_268)" transform="translate(194.73 -0.000152588)">
+<path d="M301.5 339.035C294.122 241.054 140.863 -320.772 0 258.035C137.041 257.1 191.584 304.212 272 424.285C293.257 407.991 308.878 437.017 301.5 339.035Z" id="Vector_443_bg_0" fill="#423455">
+</path>
+<path d="M301.5 339.035C294.122 241.054 140.863 -320.772 0 258.035C137.041 257.1 191.584 304.212 272 424.285C293.257 407.991 308.878 437.017 301.5 339.035Z" fill="url(#pattern1_371_268)"/>
+<path d="M301.5 339.035C294.122 241.054 140.863 -320.772 0 258.035C137.041 257.1 191.584 304.212 272 424.285C293.257 407.991 308.878 437.017 301.5 339.035Z" stroke="black"/>
+</g>
+<g id="Vector_442" filter="url(#filter3_iii_371_268)" transform="translate(0.000244141 225.984)">
+<path d="M7.97907 241.551C-1.48843 250.053 -3.76996 257.801 7.97907 268.301C4.23324 279.098 19.1566 289.257 33.2291 288.301L33.5378 288.28C47.4519 287.334 57.709 286.637 88.9791 298.301C120.48 310.051 120.284 382.197 199.229 398.801C278.175 415.405 398.137 395.411 476.979 248.801C476.979 248.801 490.23 232.301 476.979 189.551C454.48 99.551 335.23 -38.4491 203.979 10.0511C190.688 17.2531 113.673 82.1348 105.729 104.551C95.48 154.051 71.73 201.801 7.97907 241.551Z" id="Vector_442_bg_0" fill="#DAB95A">
+</path>
+<path d="M7.97907 241.551C-1.48843 250.053 -3.76996 257.801 7.97907 268.301C4.23324 279.098 19.1566 289.257 33.2291 288.301L33.5378 288.28C47.4519 287.334 57.709 286.637 88.9791 298.301C120.48 310.051 120.284 382.197 199.229 398.801C278.175 415.405 398.137 395.411 476.979 248.801C476.979 248.801 490.23 232.301 476.979 189.551C454.48 99.551 335.23 -38.4491 203.979 10.0511C190.688 17.2531 113.673 82.1348 105.729 104.551C95.48 154.051 71.73 201.801 7.97907 241.551Z" stroke="#002053"/>
+</g>
+<g id="Group_4" transform="translate(111.48 314.035)">
+<circle id="Ellipse_120_2" cx="47.5" cy="47.5" r="47.5" fill="white"/>
+<ellipse id="Ellipse_125_2" transform="translate(18.9944 14.8351)" cx="32.1407" cy="32.4251" rx="32.1407" ry="32.4251" fill="#282828"/>
+</g>
+<path id="Vector_447" transform="translate(204.731 475.507)" d="M80.2501 46.0278C16.75 67.5277 8.75088 10.2778 0 2.77776C8.49902 -3.47223 16.75 2.77776 16.75 2.77776C51.249 35.0279 54.7491 33.2777 80.2501 46.0278Z" fill="#A77E06"/>
+<g id="Group_6" transform="matrix(-0.999485 0.0321042 0.0321042 0.999485 51.7517 478.02)">
+<path id="Line_124" transform="matrix(-0.958114 -0.286387 0.23028 -0.973124 40.1316 19.1602)" d="M0 3.80269C9.46484 0.667276 20.2387 -2.1535 33.5096 2.33435" stroke="black" stroke-width="7.5" stroke-linecap="round"/>
+<path id="Line_125" transform="matrix(0.663064 -0.748562 0.666394 0.7456 0.000216582 8.75989)" d="M-0.000108682 0.782398C5.07946 2.87262 8.24913 1.9509 11.7034 0" stroke="black" stroke-width="7.5" stroke-linecap="round"/>
+</g>
+<path id="Vector_448" transform="translate(115.48 463.919) rotate(-8.65183)" d="M0 39.75C1.53707 39.5979 2.99742 39.4477 4.51602 39.2617C17.9753 37.6246 31.3645 34.5115 43.8451 28.5788C56.3543 22.7061 67.2398 13.7565 76.0791 3.47965C77.0795 2.32942 78.0311 1.18765 79 0C77.7004 0.812632 76.44 1.59339 75.1538 2.396C63.6677 9.59052 52.424 16.2558 40.6201 21.8075C28.8328 27.4167 16.5093 32.3526 4.13654 37.8881C2.74198 38.5067 1.40795 39.1149 0 39.75Z" fill="#AF9256"/>
+</g>
+<defs>
+<filter id="filter0_i_371_268" x="-1.99976" y="0" width="150.13" height="266.779" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-75"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.00392157 0 0 0 0 0.121569 0 0 0 0 0.333333 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_371_268"/>
+</filter>
+<filter id="filter1_i_371_268" x="-115" y="0" width="381.517" height="284.209" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-115"/>
+<feGaussianBlur stdDeviation="62.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0941176 0 0 0 0 0.180392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_371_268"/>
+</filter>
+<filter id="filter2_ii_371_268" x="-74.9998" y="-15" width="413.354" height="439.285" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="35" dy="-2.5"/>
+<feGaussianBlur stdDeviation="37.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.854902 0 0 0 0 0.72549 0 0 0 0 0.352941 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_371_268"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-125" dy="-15"/>
+<feGaussianBlur stdDeviation="37.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0941176 0 0 0 0 0.180392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_371_268" result="effect2_innerShadow_371_268"/>
+</filter>
+<filter id="filter3_iii_371_268" x="-125" y="0" width="657.868" height="478.689" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="120" dy="30"/>
+<feGaussianBlur stdDeviation="25"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.945098 0 0 0 0 0.909804 0 0 0 0 0.772549 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_371_268"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="27.5" dy="80"/>
+<feGaussianBlur stdDeviation="37.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.713726 0 0 0 0 0.47451 0 0 0 0 0.360784 0 0 0 0.65 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_371_268" result="effect2_innerShadow_371_268"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-150"/>
+<feGaussianBlur stdDeviation="62.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.054902 0 0 0 0 0.0862745 0 0 0 0 0.168627 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_371_268" result="effect3_innerShadow_371_268"/>
+</filter>
+<pattern id="pattern0_371_268" patternUnits="userSpaceOnUse" patternTransform="matrix(60.75 0 0 46.25 150.158 95.42)" preserveAspectRatio="none" viewBox="-4.54297 -5.96741 121.5 92.5" width="1" height="1">
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-243 -185)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-121.5 -185)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(0 -185)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-243 -92.5)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-121.5 -92.5)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(0 -92.5)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-243 0)"/>
+<use xlink:href="#pattern0_371_268_inner" transform="translate(-121.5 0)"/>
+<g id="pattern0_371_268_inner">
+<path id="Vector_451" d="M0 0L243 185" stroke="#0A182C" stroke-width="15"/>
+</g>
+</pattern><pattern id="pattern1_371_268" patternUnits="userSpaceOnUse" patternTransform="matrix(36.625 0 0 108.25 -3.55225 -321.974)" preserveAspectRatio="none" viewBox="-7.10449 -2.40369 73.25 216.5" width="1" height="1">
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-146.5 -433)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-73.25 -433)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(0 -433)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-146.5 -216.5)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-73.25 -216.5)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(0 -216.5)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-146.5 0)"/>
+<use xlink:href="#pattern1_371_268_inner" transform="translate(-73.25 0)"/>
+<g id="pattern1_371_268_inner">
+<path id="Vector_450" d="M0 433L146.5 0" stroke="#031C3A" stroke-width="15"/>
+</g>
+</pattern></defs>
+</svg>
