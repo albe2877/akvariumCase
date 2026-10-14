@@ -1,6 +1,105 @@
 
-.baggrund img {
-    width: auto;
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
     height: 100vh;
+    min-height: 100svh;
+    overflow: hidden;
+}
+
+.baggrund {
+    position: absolute;
+    inset: 0;
+}
+
+.baggrund img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.svommere {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    gap: 1vh 1vw;
+    margin: 0;
+    padding: 2vh 2vw;
+    list-style: none;
+}
+
+.svommere li {
+    display: flex;
+    min-width: 0;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(4px, 1vw, 12px);
+    animation: svoem-sidevaerts 6s ease-in-out infinite alternate;
+}
+
+.svommere li:nth-child(2n) {
+    animation-direction: alternate-reverse;
+}
+
+.svommere li:nth-child(3n) {
+    animation-delay: -2s;
+}
+
+.svommere li:nth-child(4n) {
+    animation-delay: -4s;
+}
+
+.svommere img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes svoem-sidevaerts {
+    from {
+        transform: translateX(-7px);
+    }
+
+    to {
+        transform: translateX(7px);
+    }
+}
+
+@media (max-width: 600px) {
+    .svommere {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(7, minmax(0, 1fr));
+        gap: 0.5vh 2vw;
+        padding: 1vh 3vw;
+    }
+
+    .svommere li {
+        padding: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .svommere li {
+        animation: none;
+    }
 }
