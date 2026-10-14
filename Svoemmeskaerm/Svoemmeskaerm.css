@@ -1,4 +1,45 @@
+/* farvepalette*/
 
+:root {
+    --blaaTekst: #0D3B89;
+    --blaaTekstGennemsigtig: #0D3B89;
+}
+
+
+.baggrund {
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+}
 
 /*vh betyder viewport height – altså højden på browserens synlige vindue. 100vh betyder, at baggrunden får hele vinduets højde.*/
 
+.SprogBobbel {
+    position: left;
+    width: 200px;
+    height: auto;
+}
+
+.overskrift {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100px;
+    color: var(--blaaTekst);
+}
+
+.underoverskrift {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+color: var(--blaaTekst);
+}
