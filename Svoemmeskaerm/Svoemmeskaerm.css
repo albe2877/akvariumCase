@@ -93,7 +93,7 @@ body {
     }
 
     .svommere li {
-        padding: 4px;
+        padding: clamp(4px, 1vw, 12px);
     }
 }
 
