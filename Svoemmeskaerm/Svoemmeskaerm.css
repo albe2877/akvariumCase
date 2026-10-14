@@ -2,7 +2,7 @@
 
 :root {
     --blaaTekst: #0D3B89;
-    --blaaTekstGennemsigtig: #0D3B89;
+    --blaaTekstGennemsigtig: #0d3a8981;
 }
 
 
@@ -15,14 +15,16 @@
 /*vh betyder viewport height – altså højden på browserens synlige vindue. 100vh betyder, at baggrunden får hele vinduets højde.*/
 
 .SprogBobbel {
-    position: left;
-    width: 200px;
+    position: fixed;
+    width: 160px;
     height: auto;
+    top: 40px;
+    left: 40px;
 }
 
 .overskrift {
     position: fixed;
-    top: 20px;
+    top: -20px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -35,11 +37,18 @@
 
 .underoverskrift {
     position: fixed;
-    top: 200px;
+    top: 105px;
     left: 0;
     width: 100%;
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-color: var(--blaaTekst);
+    color: var(--blaaTekstGennemsigtig);
+    font-size: 60px;
+}
+
+.baggrund img{
+    height: 100vh;
+    width: auto;
+    z-index: -1;
 }
