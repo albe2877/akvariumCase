@@ -5,21 +5,21 @@
     --blaaTekstGennemsigtig: #0d3a8981;
 }
 
-
-.baggrund {
-    height: 100vh;
-    width: auto;
-    z-index: -1;
-}
-
-/*vh betyder viewport height – altså højden på browserens synlige vindue. 100vh betyder, at baggrunden får hele vinduets højde.*/
-
 .SprogBobbel {
     position: fixed;
     width: 90px;
     height: auto;
     top: 40px;
     left: 40px;
+    z-index: 1;
+}
+
+.storcenterNordLogo {
+    position: fixed;
+    width: 90px;
+    height: auto;
+    top: 40px;
+    right: 40px;
     z-index: 1;
 }
 
@@ -50,15 +50,15 @@
     z-index: 1;
 }
 
-
-.baggrund img{
-    height: 100vh;
-    width: auto;
-    z-index: -1;
-}
-
 body {
     margin: 0;
+}
+
+.navigation {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .venstrePil {
@@ -68,7 +68,8 @@ body {
     padding: 0;
     border: 0;
     background: transparent;
-    z-index: 1;
+    z-index: 10;
+    pointer-events: auto; /* sørger for at knapperne kan klikkes på */
 }
 .hoejrePil {
     position: fixed;
@@ -77,7 +78,8 @@ body {
     padding: 0; 
     border: 0;
     background: transparent;
-    z-index: 1;
+    z-index: 10;
+    pointer-events: auto; /* sørger for at knapperne kan klikkes på */
 }
 
 .venstrePil{
@@ -102,181 +104,147 @@ body {
 }
 
 
-/* Her er alle fiskene*/
-
-.Gulfinnet {
-width: 100px;
-height: auto;
-}
-
-.Klovnfisk{
-width: 100px;
-height: auto;
-}
-
-.Orangeplettet{
-width: 100px;
-height: auto;
-}
-
-.Paletkirurg{
-width: 100px;
-height: auto;
-}
-
-.Pincetfisk{
-width: 100px;
-height: auto;
-}
-
-.Pindsvinefisk{
-width: 100px;
-height: auto;
-}
-
-.Rævefjæs{
-width: 100px;
-height: auto;
-}
-
-.Rødehavskirurg{
-width: 100px;
-height: auto;
-}
-
-.Sohalkirurg{
-width: 100px;
-height: auto;
-}
-
-.Søstjerne{
-width: 100px;
-height: auto;
-}
-
-.Turbosnegl{
-width: 100px;
-height: auto;
-}
-
-.Zebrastribet{
-width: 100px;
-height: auto;
-}
-
-.Havsnegl{
-width: 100px;
-height: auto;
-}
-
+/* herunder kommer css der får viewporten til at være fast (16:9), og fiskene til at have en fast position i forhold til baggrunden. */
 
 .screen {
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
+/* dette skjuler bare den scrollemenu, der ellers normalt vises i bunden af browseren */
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
 .world {
   position: relative;
-  width: 300vw;
+  width: 277.7113vh; /* bredde på baggrunden fundet via AI */
   height: 100vh;
 }
 
 .baggrund,
 .svommere {
   position: absolute;
-  inset: 0;
+  inset: 0; /* inset er en shortcut for top, right, bottom, left */
 }
 
+.baggrund {
+  z-index: 0;
+}
 
-/* Her prøver jeg at rykke på fiskenes placeringer */
-/* Det skal stå i pixels, så det ikke flytter sig med viewport størrelsen/ikke er responsivt */
+.baggrund img {
+  display: block; /* fjerner det whitespace der nogengange dukker op */
+  width: 100%;
+  height: 100%;
+}
 
+.svommere {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* denne kode vælger hver child af .svommere og lader dem blive placeret på specifikke steder på .baggrund (grundet absolute) */
 .svommere > a {
   position: absolute;
+  display: block;
+  width: 15vh; /* dette gør deres størrelse til en fast værdi ift. viewporten */
 }
 
-
-.Turbosnegl {
-  top: 570px;
-  left: 750px;
-}
-    .Turbosnegl img {
-        transform: scaleX(-1);
-    }
-
-.Søstjerne {
-  top: 560px;
-  left: 20px;
-  width: 130px;
+/* dette gør, at linket Amalie har givet fiskene til deres egen .html matcher fiske svg'ens størrelse */
+.svommere > a > img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
-.Pindsvinefisk {
-  top: 400px;
-  right: 100px;
+
+/* samling af alle fisk der skal spejlvendes, så de svømmer den rigtige vej ift. figma mockuppen */
+.Turbosnegl img,
+.Pincetfisk img,
+.Pindsvinefisk img {
+  transform: scaleX(-1); 
 }
 
-.Klovnfisk {
-  top: 180px;
-  left: 30px;
-  width: 140px;
-  height: auto;
+
+/* herunder positioneres alle fiskene */
+/* positioner og størrelser laves med vh og IKKE px, så fiskene skalerer med baggrunden */
+.svommere > a.Turbosnegl {
+  top: 81vh;
+  left: 110vh;
 }
 
-.Zebrastribet {
-    top: 250px;
-    left: 190px;
-    width: 150px;
-    }
-
-.Rødehavskirurg {
-  top: 300px;
-  left: 400px;
-  width: 140px;
-}
-.Sohalkirurg {
-  top: 500px;
-  left: 140px;
-  width: 160px;
+.svommere > a.Søstjerne {
+  top: 82vh;
+  left: 3vh;
+  width: 18vh;
 }
 
-.Gulfinnet {
-  top: 480px;
-  left: 1200px;
-  width: 100px;
+.svommere > a.Pindsvinefisk {
+  top: 25vh;
+  right: 65vh;
+  width: 22vh;
 }
 
-.Orangeplettet {
-  top: 600px;
-  left: 1000px;
-  width: 140px;
+.svommere > a.Klovnfisk {
+  top: 28vh;
+  left: 5vh;
+  width: 18vh;
 }
 
-.Pincetfisk {
-  top: 450px;
-  left: 650px;
-  width: 170px;
-}
-    .Pincetfisk img {
-        transform: scaleX(-1);
-    }
-
-.Rævefjæs {
-  top: 200px;
-  left: 1400px;
-  width: 140px;
+.svommere > a.Zebrastribet {
+  top: 40vh;
+  left: 24vh;
+  width: 20vh;
 }
 
-.Havsnegl {
-    top: 520px;
-    right: 20px;
-    width: 140px;
+.svommere > a.Rødehavskirurg {
+  top: 60vh;
+  right: 30vh;
+  width: 20vh;
 }
 
-.Paletkirurg {
-    top: 300px;
-    left: 1600px;
-    width: 140px;
+.svommere > a.Sohalkirurg {
+  top: 75vh;
+  left: 20vh;
+  width: 22vh;
+}
+
+.svommere > a.Gulfinnet {
+  top: 70vh;
+  right: 92vh;
+}
+
+.svommere > a.Orangeplettet {
+  top: 60vh;
+  right: 105vh;
+  width: 25vh;
+}
+
+.svommere > a.Pincetfisk {
+  top: 65vh;
+  left: 90vh;
+  width: 25vh;
+}
+
+.svommere > a.Rævefjæs {
+  top: 42vh;
+  left: 125vh;
+  width: 25vh;
+  transform: rotate(10deg);
+}
+
+.svommere > a.Havsnegl {
+  top: 77vh;
+  right: 32vh;
+  width: 18vh;
+}
+
+.svommere > a.Paletkirurg {
+  top: 30vh;
+  right: 6vh;
+  width: 22vh;
 }
