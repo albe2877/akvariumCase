@@ -1,6 +1,7 @@
 
-.baggrund img{
+.baggrund {
+    width: 100vw;
     height: 100vh;
-    width: auto;
-    z-index: -1;
 }
+/*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
+/*Viewport width og height er 100% af skærmen.*/
