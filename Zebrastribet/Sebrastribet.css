@@ -1,7 +1,82 @@
 
+:root {
+    --blaaTekst: #0D3B89;
+    --blaaTekstGennemsigtig: #0d3a8981;
+}
+
 .baggrund {
     width: 100vw;
     height: 100vh;
+    z-index: -1; /*virker ik*/
 }
 /*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
 /*Viewport width og height er 100% af skærmen.*/
+
+h1 {
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--blaaTekst);
+}
+/*position: absolute; gør at elementet kan placeres frit på skærmen. 
+man bruger top, right, bottom og left til at placere elementet.*/
+
+.Zebrastribet{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    height: 600px;
+    width: auto;
+}
+
+.LevestedBobbel{
+    position: absolute;
+    left: 200px;
+    top: 1000px;
+    height: 200px;
+    width: auto;
+}
+
+.madBobbel{
+    position: absolute;
+    left: 500px;
+    top: 1000px;
+    height: 200px;
+    width: auto;
+}       
+
+.stoerrelseBobbel{
+    position: absolute;
+    left: 800px;
+    top: 1000px;
+    height: 200px;
+    width: auto;
+}   
+
+.alderBobbel{
+    position: absolute;
+    left: 1100px;
+    top: 1000px;
+    height: 200px;
+    width: auto;
+}
+
+.LukNedBobbel{
+    position: absolute;
+    left: 1900px;
+    top: 1000px;
+    height: 200px;
+    width: auto;
+}
+
+.tekstBobbel{
+    position: absolute;
+    left: 1350px;
+    top: 350px;
+    height: 670px;
+    width: auto;
+}
