@@ -16,39 +16,122 @@
 
 .SprogBobbel {
     position: fixed;
-    width: 160px;
+    width: 90px;
     height: auto;
-    top: 40px;
-    left: 40px;
+    top: 50px;
+    left: 50px;
 }
 
 .overskrift {
     position: fixed;
-    top: -20px;
+    top: -10px;
     left: 0;
     width: 100%;
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 80px;
     color: var(--blaaTekst);
 }
 
 .underoverskrift {
     position: fixed;
-    top: 105px;
+    top: 90px;
     left: 0;
     width: 100%;
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     color: var(--blaaTekstGennemsigtig);
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .baggrund img{
     height: 100vh;
     width: auto;
     z-index: -1;
+}
+
+.venstrePil {
+    position: fixed;
+    left: 50px;
+    height: 15%;
+    width: auto;
+    top: 50%;
+}
+.højrePil {
+    position: fixed;
+    right: 50px;
+    height: 15%;
+    width: auto;
+    top: 50%;
+}
+
+
+/* Her er alle fiskene*/
+
+.Gulfinnet {
+width: 100px;
+height: auto;
+}
+
+.Klovnfisk{
+width: 100px;
+height: auto;
+}
+
+.Orangeplettet{
+width: 100px;
+height: auto;
+}
+
+.Paletkirurg{
+width: 100px;
+height: auto;
+}
+
+.Pincetfisk{
+width: 100px;
+height: auto;
+}
+
+.Pindsvinefisk{
+width: 100px;
+height: auto;
+}
+
+.Rævefjæs{
+width: 100px;
+height: auto;
+}
+
+.Rødehavskirurg{
+width: 100px;
+height: auto;
+}
+
+.Sohalkirurg{
+width: 100px;
+height: auto;
+}
+
+.Søstjerne{
+width: 100px;
+height: auto;
+}
+
+.Turbosnegl{
+width: 100px;
+height: auto;
+}
+
+.Zebrastribet {
+width: 100px;
+height: auto;
+}
+
+.Havsnegl{
+width: 100px;
+height: auto;
 }
