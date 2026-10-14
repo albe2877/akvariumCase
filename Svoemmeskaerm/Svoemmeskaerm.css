@@ -20,6 +20,7 @@
     height: auto;
     top: 40px;
     left: 40px;
+    z-index: 1;
 }
 
 .overskrift {
@@ -33,6 +34,7 @@
     font-weight: bold;
     font-size: 80px;
     color: var(--blaaTekst);
+    z-index: 1;
 }
 
 .underoverskrift {
@@ -45,6 +47,7 @@
     font-weight: bold;
     color: var(--blaaTekstGennemsigtig);
     font-size: 45px;
+    z-index: 1;
 }
 
 
@@ -65,26 +68,28 @@ body {
     padding: 0;
     border: 0;
     background: transparent;
+    z-index: 1;
 }
-.højrePil {
+.hoejrePil {
     position: fixed;
     top: 50%;
     height: 13vh;
     padding: 0; 
     border: 0;
     background: transparent;
+    z-index: 1;
 }
 
 .venstrePil{
     left: 40px;
 }
 
-.højrePil{
+.hoejrePil{
     right: 40px;
 }
 
 .venstrePil img,
-.højrePil img {
+.hoejrePil img {
     display: block;
     height: 100%;
     width: auto;
@@ -148,8 +153,8 @@ width: 100px;
 height: auto;
 }
 
-.Zebrastribet {
-width: 20px;
+.Zebrastribet{
+width: 100px;
 height: auto;
 }
 
@@ -177,8 +182,94 @@ height: auto;
   inset: 0;
 }
 
+
+/* Her prøver jeg at rykke på fiskenes placeringer */
+/* Det skal stå i pixels, så det ikke flytter sig med viewport størrelsen/ikke er responsivt */
+
 .svommere > a {
   position: absolute;
-  left: 0;
-  top: 0;
+}
+
+
+.Turbosnegl {
+  top: 570px;
+  left: 750px;
+}
+    .Turbosnegl img {
+        transform: scaleX(-1);
+    }
+
+.Søstjerne {
+  top: 560px;
+  left: 20px;
+  width: 130px;
+  height: auto;
+}
+
+.Pindsvinefisk {
+  top: 400px;
+  right: 100px;
+}
+
+.Klovnfisk {
+  top: 180px;
+  left: 30px;
+  width: 140px;
+  height: auto;
+}
+
+.Zebrastribet {
+    top: 250px;
+    left: 190px;
+    width: 150px;
+    }
+
+.Rødehavskirurg {
+  top: 300px;
+  left: 400px;
+  width: 140px;
+}
+.Sohalkirurg {
+  top: 500px;
+  left: 140px;
+  width: 160px;
+}
+
+.Gulfinnet {
+  top: 480px;
+  left: 1200px;
+  width: 100px;
+}
+
+.Orangeplettet {
+  top: 600px;
+  left: 1000px;
+  width: 140px;
+}
+
+.Pincetfisk {
+  top: 450px;
+  left: 650px;
+  width: 170px;
+}
+    .Pincetfisk img {
+        transform: scaleX(-1);
+    }
+
+.Rævefjæs {
+  top: 200px;
+  left: 1400px;
+  width: 140px;
+}
+
+.Havsnegl {
+    top: 520px;
+    right: 20px;
+    width: 140px;
+}
+
+.Paletkirurg {
+    top: 300px;
+    left: 1600px;
+    width: 140px;
 }
