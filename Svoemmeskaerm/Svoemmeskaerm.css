@@ -54,19 +54,40 @@
     z-index: -1;
 }
 
+body {
+    margin: 0;
+}
+
 .venstrePil {
     position: fixed;
-    left: 40px;
-    height: 13%;
-    width: auto;
     top: 50%;
+    height: 13vh;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
 .højrePil {
     position: fixed;
-    right: 40px;
-    height: 13%;
-    width: auto;
     top: 50%;
+    height: 13vh;
+    padding: 0; 
+    border: 0;
+    background: transparent;
+}
+
+.venstrePil{
+    left: 40px;
+}
+
+.højrePil{
+    right: 40px;
+}
+
+.venstrePil img,
+.højrePil img {
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 
@@ -128,11 +149,36 @@ height: auto;
 }
 
 .Zebrastribet {
-width: 100px;
+width: 20px;
 height: auto;
 }
 
 .Havsnegl{
 width: 100px;
 height: auto;
+}
+ 
+
+
+.screen {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.world {
+  position: relative;
+  width: 300vw;
+  height: 100vh;
+}
+
+.baggrund,
+.svommere {
+  position: absolute;
+  inset: 0;
+}
+
+.svommere > a {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
