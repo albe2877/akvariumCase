@@ -1,9 +1,15 @@
 const screen = document.querySelector("#screen");
+const leftButton = document.querySelector(".venstrePil");
+const rightButton = document.querySelector(".hoejrePil");
 
-document.querySelector(".venstrePil").addEventListener("click", () => {
-  screen.scrollBy({ left: -screen.clientWidth, behavior: "smooth" });
+screen.scrollLeft = screen.clientWidth / 3;
+
+leftButton.addEventListener("click", () => {
+  screen.scrollBy({ left: -screen.clientWidth / 3, behavior: "smooth" });
+  leftButton.disabled = true;
 });
 
-document.querySelector(".højrePil").addEventListener("click", () => {
-  screen.scrollBy({ left: screen.clientWidth, behavior: "smooth" });
+rightButton.addEventListener("click", () => {
+  screen.scrollBy({ left: screen.clientWidth / 3, behavior: "smooth" });
+  rightButton.disabled = true;
 });
