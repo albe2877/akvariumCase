@@ -46,3 +46,9 @@
     color: var(--blaaTekstGennemsigtig);
     font-size: 60px;
 }
+
+.baggrund img{
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+}
