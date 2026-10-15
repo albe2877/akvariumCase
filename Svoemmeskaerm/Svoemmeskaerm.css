@@ -103,6 +103,9 @@ body {
     cursor: not-allowed;
 }
 
+/* Ovenover er det der får pilene til at være 50% gennemsigtig når man er ude i siden */
+
+/* Screen indeholder world som indeholder svommere og baggrund
 
 /* herunder kommer css der får viewporten til at være fast (16:9), og fiskene til at have en fast position i forhold til baggrunden. */
 
