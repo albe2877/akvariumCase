@@ -1,21 +1,5 @@
 //Her kommer start lyden "klik på fiskene for at hører mere"
 
-// 1. Find lydfilen i HTML
-const hejLyd = document.querySelector("#hejTrykPaaMig");
-
-// 2. Lav en funktion, der afspiller lyden
-function afspilHej() {
-    hejLyd.currentTime = 0; // Start lyden fra begyndelsen
-    hejLyd.play(); // Afspil lyden
-
-    console.log("Hej-lyden afspilles!");
-}
-
-// 3. Afspil lyden med det samme
-afspilHej();
-
-// 4. Gentag lyden hvert 10. sekund
-setInterval(afspilHej, 10000);
 
 
 
