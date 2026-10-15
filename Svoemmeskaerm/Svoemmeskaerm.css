@@ -203,13 +203,38 @@ body {
   top: 28vh;
   left: 5vh;
   width: 18vh;
+  animation: klovnfiskSwim 15s linear infinite;
 }
+  @keyframes klovnfiskSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(50vh) scaleX(1);}
+    50% {
+    transform: translateX(50vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
 
 .svommere > a.Zebrastribet {
   top: 40vh;
   left: 24vh;
   width: 20vh;
+  animation: zebrastribetSwim 15s linear infinite;
 }
+  @keyframes zebrastribetSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(45vh) scaleX(1);}
+    50% {
+    transform: translateX(45vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
+
 
 .svommere > a.Rødehavskirurg {
   top: 60vh;
@@ -251,21 +276,17 @@ body {
   top: 77vh;
   right: 32vh;
   width: 18vh;
-  animation: swim 20.5s linear infinite;
+  animation: havsneglSwim 20s linear infinite;
 }
-  @keyframes swim {
+  @keyframes havsneglSwim {
     0% {
     transform: translateX(0) scaleX(1);}
-
     49.9% {
     transform: translateX(-60vh) scaleX(1);}
-
     50% {
     transform: translateX(-60vh) scaleX(-1);}
-
     99.9% {
     transform: translateX(0) scaleX(-1);}
-
     100% {
     transform: translateX(0) scaleX(1);}}
 
