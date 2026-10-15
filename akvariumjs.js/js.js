@@ -1,22 +1,6 @@
 //Her kommer start lyden "klik på fiskene for at hører mere"
-
-const backgroundMusic = document.querySelector("#baggrundsmusik");
-
-function startBackgroundMusic() {
-  backgroundMusic.play().then(() => {
-    document.removeEventListener("pointerdown", startBackgroundMusic);
-    document.removeEventListener("keydown", startBackgroundMusic);
-  }).catch((error) => {
-    console.warn("Baggrundsmusikken kunne ikke starte:", error);
-  });
-}
-
-backgroundMusic.play().catch(() => {
-  document.addEventListener("pointerdown", startBackgroundMusic, { once: true });
-  document.addEventListener("keydown", startBackgroundMusic, { once: true });
-});
-
-
+// 1. Find lydfilen i HTML
+const klikPaaFiskeneAudio = document.querySelector("#klikPaaFiskeneAudio");
 
 const screen = document.querySelector("#screen");
 const leftButton = document.querySelector(".venstrePil");

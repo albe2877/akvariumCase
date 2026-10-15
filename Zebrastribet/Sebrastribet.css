@@ -18,7 +18,8 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 /*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
 /*Viewport width og height er 100% af skærmen.*/
@@ -29,15 +30,13 @@ body {
 
 .world {
     position: relative;
-    width: min(100vw);
-    aspect-ratio: 7479 / 4237;
-    margin: auto;
+    width: 176.52vh;
+    height: 100vh;
+    margin: 0 auto;
 }
 /*position: relative gør .world til referencepunkt for elementer, som har position: absolute.*/
-/* width: min(100vw, 177vh); begrænser bredden, så designfladen kan være på skærmen både på brede og mere kvadratiske skærme.*/
-/*aspect-ratio: 7479 / 4237; fortæller browseren, at .world skal beholde præcis samme bredde-højde-forhold som din SVG.*/
-/* margin: auto; hjælper med at centrere fladen vandret.*/
-/* Vi bruger 177vh som en afrundet værdi for at holde designfladen inden for skærmens højde. Fordi aspect-ratio bestemmer forholdet, bliver højden automatisk beregnet ud fra bredden.*/
+/* .world har samme formatforhold som baggrundsbilledet (7479 / 4237).*/
+/* Højden er 100vh, så vh-positionerne måles fra baggrundens top/venstre og følger den.*/
 
 
 /* Baggrunden */
