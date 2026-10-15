@@ -29,7 +29,7 @@ body {
 
 .world {
     position: relative;
-    width: min(100vw, 177vh);
+    width: min(100vw);
     aspect-ratio: 7479 / 4237;
     margin: auto;
 }
