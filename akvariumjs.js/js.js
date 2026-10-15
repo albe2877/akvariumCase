@@ -24,3 +24,4 @@ rightButton.addEventListener("click", () => {
 
 screen.addEventListener("scroll", updateScrollButtons); /* opdaterer knapperne når man scroller med musen */
 updateScrollButtons(); /* checker startpositionen ved sideindlæsning for at se om knapperne skal disables */
+
