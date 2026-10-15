@@ -1,14 +1,11 @@
 
-```css
 /* FARVER */
-
 :root {
     --blaaTekst: #0D3B89;
     --blaaTekstGennemsigtig: #0d3a8981;
 }
 
-/* FJERN STANDARDMARGENER */
-
+/* Fjerner browserens standardmargener */
 html,
 body {
     margin: 0;
@@ -16,52 +13,44 @@ body {
     height: 100%;
 }
 
-/* SELVE SKÆRMEN */
-
+/* Selve skærmvinduet */
 .screen {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
+/*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
+/*Viewport width og height er 100% af skærmen.*/
 
-/* VERDENEN, SOM ELEMENTERNE PLACERES I */
-
+/* Området, hvor alle elementerne placeres */
+/* Området hvor alle elementerne placeres */
 .world {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
 }
 
-/* BAGGRUND */
+/*position: relative gør .world til referencepunkt for elementer, som har position: absolute.
+/*overflow: hidden skjuler det, der ligger uden for skærmvinduet.
 
+/* Baggrunden */
 .baggrund {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
     z-index: 0;
 }
+/*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.
 
-/* FISK */
 
-.Zebrastribet {
-    position: absolute;
-    left: 8.33%;
-    top: 25%;
-    height: 50vh;
-    width: auto;
-    z-index: 1;
-}
 
-/* OVERSKRIFT */
-
+/* Overskriften */
 h1 {
     position: absolute;
-    right: 8.33%;
-    top: 8.33%;
+    right: 8.33vh;
+    top: 8.33vh;
     margin: 0;
     text-align: center;
     font-family: 'Barlow', sans-serif;
@@ -70,64 +59,75 @@ h1 {
     color: var(--blaaTekst);
     z-index: 2;
 }
+/*position: absolute; gør at elementet kan placeres frit på skærmen. 
+man bruger top, right, bottom og left til at placere elementet.*/
 
-/* TALEBOBLER */
+/* Den zebrastribede kirurgfisk */
+.Zebrastribet {
+    position: absolute;
+    left: 16.67vh;
+    top: 25vh;
+    height: 50vh;
+    width: auto;
+    z-index: 1;
+}
 
+/* Boblen med levested */
 .LevestedBobbel {
     position: absolute;
-    left: 8.33%;
-    top: 83.33%;
+    left: 16.67vh;
+    top: 83.33vh;
     height: 16.67vh;
     width: auto;
     z-index: 2;
 }
 
+/* Boblen med mad */
 .madBobbel {
     position: absolute;
-    left: 20.83%;
-    top: 83.33%;
+    left: 41.67vh;
+    top: 83.33vh;
     height: 16.67vh;
     width: auto;
     z-index: 2;
-}
+}   
 
+/* Boblen med størrelse */
 .stoerrelseBobbel {
     position: absolute;
-    left: 33.33%;
-    top: 83.33%;
+    left: 66.67vh;
+    top: 83.33vh;
     height: 16.67vh;
     width: auto;
     z-index: 2;
 }
 
+/* Boblen med alder */
 .alderBobbel {
     position: absolute;
-    left: 45.83%;
-    top: 83.33%;
+    left: 91.67vh;
+    top: 83.33vh;
     height: 16.67vh;
     width: auto;
     z-index: 2;
 }
 
-/* LUK-BOBBEL */
-
+/* Boblen der går tilbage til akvariet */
 .LukNedBobbel {
     position: absolute;
-    left: 79.17%;
-    top: 83.33%;
+    left: 158.33vh;
+    top: 83.33vh;
     height: 16.67vh;
     width: auto;
     z-index: 2;
 }
 
-/* TEKSTBOBBEL */
-
+/* Tekstboblen med information */
 .tekstBobbel {
     position: absolute;
-    left: 56.25%;
-    top: 29.17%;
+    left: 112.5vh;
+    top: 29.17vh;
     height: 55.83vh;
     width: auto;
     z-index: 1;
 }
-```
