@@ -54,13 +54,14 @@ body {
 /* Overskriften */
 h1 {
     position: absolute;
-    right: 15vh;
+    right: 13vh;
     top: 8vh;
     margin: 0;
     text-align: center;
     font-family: 'Barlow', sans-serif;
+    font-style: italic;
     font-weight: bold;
-    font-size: 7vh;
+    font-size: 6vh;
     color: var(--blaaTekst);
     z-index: 2;
 }
@@ -70,9 +71,8 @@ h1 {
 /* Den zebrastribede kirurgfisk */
 .Zebrastribet {
     position: absolute;
-    left: 5vh;
-    top: 10vh;
-    height: 70vh;
+    top: 3vh;
+    height: 80vh;
     width: auto;
     z-index: 1;
 }
@@ -80,9 +80,9 @@ h1 {
 /* Boblen med levested */
 .LevestedBobbel {
     position: absolute;
-    left: 5vh;
-    top: 75vh;
-    height: 17vh;
+    left: 20vh;
+    top: 80vh;
+    height: 12vh;
     width: auto;
     z-index: 2;
 }
@@ -90,9 +90,9 @@ h1 {
 /* Boblen med mad */
 .madBobbel {
     position: absolute;
-    left: 30vh;
-    top: 75vh;
-    height: 17vh;
+    left: 37vh;
+    top: 80vh;
+    height: 12vh;
     width: auto;
     z-index: 2;
 }   
@@ -100,9 +100,9 @@ h1 {
 /* Boblen med størrelse */
 .stoerrelseBobbel {
     position: absolute;
-    left: 55vh;
-    top: 75vh;
-    height: 17vh;
+    left: 54vh;
+    top: 80vh;
+    height: 12vh;
     width: auto;
     z-index: 2;
 }
@@ -110,9 +110,9 @@ h1 {
 /* Boblen med alder */
 .alderBobbel {
     position: absolute;
-    left: 80vh;
-    top: 75vh;
-    height: 17vh;
+    left: 71vh;
+    top: 80vh;
+    height: 12vh;
     width: auto;
     z-index: 2;
 }
@@ -120,9 +120,9 @@ h1 {
 /* Boblen der går tilbage til akvariet */
 .LukNedBobbel {
     position: absolute;
-    left: 150vh;
-    top: 75vh;
-    height: 17vh;
+    right: 7vh;
+    top: 80vh;
+    height: 12vh;
     width: auto;
     z-index: 2;
 }
@@ -130,8 +130,8 @@ h1 {
 /* Tekstboblen med information */
 .tekstBobbel {
     position: absolute;
-    right: 10vh;
-    top: 25vh;
+    right: 7vh;
+    top: 27vh;
     height: 55vh;
     width: auto;
     z-index: 1;
