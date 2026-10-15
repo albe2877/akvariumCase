@@ -1,6 +1,7 @@
 
 console.log("Det virker sgu!!:)");
 
+
 //const
 //Opret en fast navngivet reference 
 //Du fortæller JavaScript, at du vil gemme noget under et navn.
