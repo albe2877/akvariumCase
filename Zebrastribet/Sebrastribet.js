@@ -129,3 +129,26 @@ alderBobbel.addEventListener("click", function() {
 // -> Start den valgte lyd fra begyndelsen 
 // -> Skriv en besked i konsollen, så vi kan følge med i, hvad koden gør. 
 // -> Afspil den lyd, vi har valgt
+
+/* forsøger at sætte baggrundsmusik ind på startsiden */
+const baggrundsmusik = document.getElementById("baggrundsmusik");
+baggrundsmusik.volume = 0.01; /*sætter lydstyrken lavt, så den ikke overdøver de andre lyde. */
+
+/*sessionStorage bruges til at gemme musikkens position, så den ikke starter forfra når man skifter mellem sider. */
+baggrundsmusik.addEventListener("timeupdate",function() {
+  sessionStorage.setItem("musikTid", baggrundsmusik.currentTime);
+}); 
+
+window.addEventListener("pagehide", function() {
+  sessionStorage.setItem("musikTid", baggrundsmusik.currentTime);
+});
+
+/*gør så musikken starter fra den gemte position, når man vender tilbage til siden. */
+baggrundsmusik.addEventListener("loadedmetadata", function() {
+  const gemTid = sessionStorage.getItem("musikTid");
+  if (gemTid !== null) {
+    baggrundsmusik.currentTime = Number(gemTid);
+  }
+
+  baggrundsmusik.play();
+  });
