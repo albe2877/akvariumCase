@@ -21,6 +21,7 @@
     top: 40px;
     right: 40px;
     z-index: 1;
+    cursor: pointer
 }
 
 .overskrift {
@@ -293,15 +294,3 @@ body {
     height: auto;
 }
  
-.storcenterNordLogo {
-    position: fixed;
-    width: 90px;
-    top: 40px;
-    right: 40px;
-    z-index: 3;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    pointer-events: auto;
-}
