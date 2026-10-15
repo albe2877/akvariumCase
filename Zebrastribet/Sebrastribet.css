@@ -40,6 +40,8 @@ body {
     inset: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
     z-index: 0;
 }
 /*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.
@@ -72,53 +74,44 @@ man bruger top, right, bottom og left til at placere elementet.*/
     z-index: 1;
 }
 
-/* Boblen med levested */
-.LevestedBobbel {
-    position: absolute;
-    left: 5vh;
-    top: 75vh;
-    height: 17vh;
-    width: auto;
-    z-index: 2;
-}
-
-/* Boblen med mad */
-.madBobbel {
-    position: absolute;
-    left: 30vh;
-    top: 75vh;
-    height: 17vh;
-    width: auto;
-    z-index: 2;
-}   
-
-/* Boblen med størrelse */
-.stoerrelseBobbel {
-    position: absolute;
-    left: 55vh;
-    top: 75vh;
-    height: 17vh;
-    width: auto;
-    z-index: 2;
-}
-
-/* Boblen med alder */
+/* Boblerne nederst på skærmen */
+.LevestedBobbel,
+.madBobbel,
+.stoerrelseBobbel,
 .alderBobbel {
     position: absolute;
-    left: 80vh;
-    top: 75vh;
-    height: 17vh;
+    bottom: 8vh;
+    height: clamp(70px, 17vh, 140px);
     width: auto;
+    max-width: 17vw;
     z-index: 2;
+}
+
+.LevestedBobbel {
+    left: 3%;
+}
+
+.madBobbel {
+    left: 18%;
+}
+
+.stoerrelseBobbel {
+    left: 33%;
+}
+
+.alderBobbel {
+    left: 48%;
 }
 
 /* Boblen der går tilbage til akvariet */
 .LukNedBobbel {
     position: absolute;
-    left: 150vh;
-    top: 75vh;
-    height: 17vh;
-    width: auto;
+    right: 16px;
+    bottom: 20px;
+    width: 140px;
+    max-width: min(28vw, calc(100vw - 32px));
+    max-height: calc(100vh - 32px);
+    height: auto;
     z-index: 2;
 }
 
