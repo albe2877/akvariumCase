@@ -197,7 +197,20 @@ body {
   top: 25vh;
   right: 65vh;
   width: 22vh;
+  animation: pindsvinefiskSwim 80s linear infinite;
 }
+  @keyframes pindsvinefiskSwim {
+    0% {
+    transform: translateX(0) scaleX(-1);}
+    49.9% {
+    transform: translateX(120vh) scaleX(-1);}
+    50% {
+    transform: translateX(120vh) scaleX(1);}
+    99.9% {
+    transform: translateX(0) scaleX(1);}
+    100% {
+    transform: translateX(0) scaleX(-1);}}
+
 
 .svommere > a.Klovnfisk {
   top: 28vh;
@@ -221,7 +234,7 @@ body {
   top: 40vh;
   left: 24vh;
   width: 20vh;
-  animation: zebrastribetSwim 15s linear infinite;
+  animation: zebrastribetSwim 10s linear infinite;
 }
   @keyframes zebrastribetSwim {
     0% {
@@ -240,37 +253,113 @@ body {
   top: 60vh;
   right: 30vh;
   width: 20vh;
+  animation: RødehavskirugSwim 15s linear infinite;
 }
+  @keyframes RødehavskirugSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(-35vh) scaleX(1);}
+    50% {
+    transform: translateX(-35vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
+
 
 .svommere > a.Sohalkirurg {
   top: 75vh;
   left: 20vh;
   width: 22vh;
+  animation: sohalSwim 30s linear infinite;
 }
+  @keyframes sohalSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(70vh) scaleX(1);}
+    50% {
+    transform: translateX(70vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
 
 .svommere > a.Gulfinnet {
   top: 70vh;
   right: 92vh;
+  animation: gulfinnetSwim 60s linear infinite;
 }
+  @keyframes gulfinnetSwim {
+    0% {
+    transform: translateX(0) scaleX(-1);}
+    49.9% {
+    transform: translateX(-120vh) scaleX(-1);}
+    50% {
+    transform: translateX(-120vh) scaleX(1);}
+    99.9% {
+    transform: translateX(0) scaleX(1);}
+    100% {
+    transform: translateX(0) scaleX(-1);}}
+    
 
 .svommere > a.Orangeplettet {
   top: 60vh;
   right: 105vh;
   width: 25vh;
+  animation: orangeplettetSwim 25s linear infinite;
 }
+  @keyframes orangeplettetSwim {
+    0% {
+    transform: translateX(0) scaleX(-1);}
+    49.9% {
+    transform: translateX(120vh) scaleX(-1);}
+    50% {
+    transform: translateX(120vh) scaleX(1);}
+    99.9% {
+    transform: translateX(0) scaleX(1);}
+    100% {
+    transform: translateX(0) scaleX(-1);}}
+
 
 .svommere > a.Pincetfisk {
   top: 65vh;
   left: 90vh;
   width: 25vh;
+  animation: pincetfiskSwim 15s linear infinite;
 }
+  @keyframes pincetfiskSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(-35vh) scaleX(1);}
+    50% {
+    transform: translateX(-35vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
+
 
 .svommere > a.Rævefjæs {
   top: 42vh;
   left: 125vh;
   width: 25vh;
-  transform: rotate(10deg);
+  animation: rævefjæsSwim 11s linear infinite;
 }
+  @keyframes rævefjæsSwim {
+    0% {
+    transform: translateX(0) rotate(10deg) scaleX(1);}
+    49.9% {
+    transform: translateX(35vh) rotate(10deg) scaleX(1);}
+    50% {
+    transform: translateX(35vh) rotate(-10deg) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) rotate(-10deg) scaleX(-1);}
+    100% {
+    transform: translateX(0) rotate(10deg) scaleX(1);}}
+
 
 .svommere > a.Havsnegl {
   top: 77vh;
@@ -294,7 +383,20 @@ body {
   top: 30vh;
   right: 6vh;
   width: 22vh;
+  animation: paletkirurgSwim 15s linear infinite;
 }
+  @keyframes paletkirurgSwim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(-35vh) scaleX(1);}
+    50% {
+    transform: translateX(-35vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+    100% {
+    transform: translateX(0) scaleX(1);}}
+
 
 .sprogBoble {
     position: fixed;
