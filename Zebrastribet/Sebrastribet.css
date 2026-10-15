@@ -12,6 +12,64 @@
 /*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
 /*Viewport width og height er 100% af skærmen.*/
 
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* dette skjuler bare den scrollemenu, der ellers normalt vises i bunden af browseren */
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+.world {
+  position: relative;
+  width: 277.7113vh; /* bredde på baggrunden fundet via AI */
+  height: 100vh;
+}
+
+.baggrund,
+.svommere {
+  position: absolute;
+  inset: 0; /* inset er en shortcut for top, right, bottom, left */
+}
+
+.baggrund {
+  z-index: 0;
+}
+
+.baggrund img {
+  display: block; /* fjerner det whitespace der nogengange dukker op */
+  width: 100%;
+  height: 100%;
+}
+
+.svommere {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* denne kode vælger hver child af .svommere og lader dem blive placeret på specifikke steder på .baggrund (grundet absolute) */
+.svommere > a {
+  position: absolute;
+  display: block;
+  width: 15vh; /* dette gør deres størrelse til en fast værdi ift. viewporten */
+}
+
+
+
+
+
+
+
+
+
+
 h1 {
     position: absolute;
     right: 200px;
