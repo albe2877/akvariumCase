@@ -197,15 +197,15 @@ body {
   top: 25vh;
   right: 65vh;
   width: 22vh;
-  animation: pindsvinefiskSwim 80s linear infinite;
+  animation: pindsvinefiskSwim 40s linear infinite;
 }
   @keyframes pindsvinefiskSwim {
     0% {
     transform: translateX(0) scaleX(-1);}
     49.9% {
-    transform: translateX(120vh) scaleX(-1);}
+    transform: translateX(60vh) scaleX(-1);}
     50% {
-    transform: translateX(120vh) scaleX(1);}
+    transform: translateX(60vh) scaleX(1);}
     99.9% {
     transform: translateX(0) scaleX(1);}
     100% {
@@ -253,7 +253,7 @@ body {
   top: 60vh;
   right: 30vh;
   width: 20vh;
-  animation: RødehavskirugSwim 15s linear infinite;
+  animation: RødehavskirugSwim 10s linear infinite;
 }
   @keyframes RødehavskirugSwim {
     0% {
@@ -272,7 +272,7 @@ body {
   top: 75vh;
   left: 20vh;
   width: 22vh;
-  animation: sohalSwim 30s linear infinite;
+  animation: sohalSwim 20s linear infinite;
 }
   @keyframes sohalSwim {
     0% {
@@ -333,9 +333,9 @@ body {
     0% {
     transform: translateX(0) scaleX(1);}
     49.9% {
-    transform: translateX(-35vh) scaleX(1);}
+    transform: translateX(-55vh) scaleX(1);}
     50% {
-    transform: translateX(-35vh) scaleX(-1);}
+    transform: translateX(-55vh) scaleX(-1);}
     99.9% {
     transform: translateX(0) scaleX(-1);}
     100% {
