@@ -37,12 +37,13 @@ body {
 
 /* Baggrunden */
 .baggrund {
-    position: absolute;
+    position: fixed;
     inset: 0;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: fill;
+    z-index: 0;
 }
 /*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.
 
