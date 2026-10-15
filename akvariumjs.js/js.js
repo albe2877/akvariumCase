@@ -2,6 +2,29 @@
 // 1. Find lydfilen i HTML
 const klikPaaFiskeneAudio = document.querySelector("#klikPaaFiskeneAudio");
 
+function afspilKlikPaaFiskene() {
+  if (!klikPaaFiskeneAudio) return;
+  if (!klikPaaFiskeneAudio.paused) return;
+
+  klikPaaFiskeneAudio.currentTime = 0;
+  klikPaaFiskeneAudio.play().catch((error) => {
+    console.warn("Browseren blokerede automatisk afspilning. Klik på siden for at starte lyden.", error);
+  });
+}
+
+// Forsøg ét sekund efter sideindlæsning. Hvis browseren blokerer lyden,
+// start den ved første brugerhandling.
+window.setTimeout(afspilKlikPaaFiskene, 1000);
+window.addEventListener("pointerdown", afspilKlikPaaFiskene, { once: true });
+window.addEventListener("keydown", afspilKlikPaaFiskene, { once: true });
+
+// Afspil igen efter 10 sekunder, når lydsporet er færdigt.
+if (klikPaaFiskeneAudio) {
+  klikPaaFiskeneAudio.addEventListener("ended", () => {
+    window.setTimeout(afspilKlikPaaFiskene, 10000);
+  });
+}
+
 const screen = document.querySelector("#screen");
 const leftButton = document.querySelector(".venstrePil");
 const rightButton = document.querySelector(".hoejrePil");
