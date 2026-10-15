@@ -71,8 +71,9 @@ h1 {
 /* Den zebrastribede kirurgfisk */
 .Zebrastribet {
     position: absolute;
-    top: 3vh;
-    height: 80vh;
+    top: 7vh;
+    left: 7vh;
+    height: 75vh;
     width: auto;
     z-index: 1;
 }
