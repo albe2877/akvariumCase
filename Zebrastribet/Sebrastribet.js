@@ -40,55 +40,69 @@ setTimeout(function() {
 
 function afspilLyd(lyd) {
 
-    // Stop alle fire lydfiler først
-        // Vi skal starte med at stoppe lydfilerne. På den måde spiller de ikke sammentidig hvis man starter en anden lydbobbel.
+    console.log("1. Funktionen afspilLyd bliver kørt");
+
+    // Stop velkomstlyden
+    hejTrykPaaMigAudio.pause();
+    hejTrykPaaMigAudio.currentTime = 0;
+
+    console.log("2. Velkomstlyden er sat på pause");
+
+    // Stop alle informationslyde
     levestedAudio.pause();
     madAudio.pause();
     stoerrelseAudio.pause();
     alderAudio.pause();
 
-    // Start den valgte lyd fra begyndelsen
-        // Når lyden er stoppet, sætter vi dem tilbage til 0.
-        // På den måde starter en lyd altid fra begyndelsen, når den bliver valgt.
+    // Nulstil informationslydene
     levestedAudio.currentTime = 0;
     madAudio.currentTime = 0;
     stoerrelseAudio.currentTime = 0;
     alderAudio.currentTime = 0;
 
-    // Skriv en besked i konsollen, så vi kan følge med i, hvad koden gør.
-    console.log("En taleboble blev trykket på!");
+    console.log("3. Afspiller den valgte lyd");
 
-    // Afspil den lyd, vi har valgt
+    // Afspil den valgte informationslyd
     lyd.play().catch(function(error) {
-        console.error("Kunne ikke afspille lydfilen:", lyd.currentSrc, error);
+        console.error("Kunne ikke afspille lydfilen:", error);
     });
         //lyd henviser til den lydfil vi har sendt ind i funktionen
         //.play() starter afspilningen af lyden 
 }
 
+
+    
 // Nu skal vi gøre taleboblerne klikbare, og forbinde dem med den rigtige lydfil
 
 // Klik på Levested
 levestedBobbel.addEventListener("click", function() {
     console.log("Levested blev valgt");
+
+    hejTrykPaaMigAudio.pause(); // Stop velkomstlyden
     afspilLyd(levestedAudio);
 });
 
 // Klik på Mad
 madBobbel.addEventListener("click", function() {
     console.log("Mad blev valgt");
+
+    hejTrykPaaMigAudio.pause(); // Stop velkomstlyden
     afspilLyd(madAudio);
 });
 
 // Klik på Størrelse
 stoerrelseBobbel.addEventListener("click", function() {
     console.log("Størrelse blev valgt");
+
+    hejTrykPaaMigAudio.pause(); // Stop velkomstlyden
     afspilLyd(stoerrelseAudio);
 });
 
 // Klik på Alder
 alderBobbel.addEventListener("click", function() {
     console.log("Alder blev valgt");
+
+    hejTrykPaaMigAudio.pause(); // Stop velkomstlyden
     afspilLyd(alderAudio);
 });
 
