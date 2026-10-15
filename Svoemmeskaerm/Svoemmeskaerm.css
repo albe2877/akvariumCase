@@ -182,6 +182,8 @@ body {
 
 /* herunder positioneres alle fiskene */
 /* positioner og størrelser laves med vh og IKKE px, så fiskene skalerer med baggrunden */
+/* animationer laves med @keyframes og transform: translateX for at flippe fiskene*/
+
 .svommere > a.Turbosnegl {
   top: 81vh;
   left: 110vh;
@@ -272,7 +274,7 @@ body {
   top: 75vh;
   left: 20vh;
   width: 22vh;
-  animation: sohalSwim 20s linear infinite;
+  animation: sohalSwim 15s linear infinite;
 }
   @keyframes sohalSwim {
     0% {
@@ -289,7 +291,7 @@ body {
 .svommere > a.Gulfinnet {
   top: 70vh;
   right: 92vh;
-  animation: gulfinnetSwim 60s linear infinite;
+  animation: gulfinnetSwim 40s linear infinite;
 }
   @keyframes gulfinnetSwim {
     0% {
@@ -308,17 +310,17 @@ body {
   top: 60vh;
   right: 105vh;
   width: 25vh;
-  animation: orangeplettetSwim 25s linear infinite;
+  animation: orangeplettetSwim 15s linear infinite;
 }
   @keyframes orangeplettetSwim {
     0% {
-    transform: translateX(0) scaleX(-1);}
-    49.9% {
-    transform: translateX(120vh) scaleX(-1);}
-    50% {
-    transform: translateX(120vh) scaleX(1);}
-    99.9% {
     transform: translateX(0) scaleX(1);}
+    49.9% {
+    transform: translateX(-30vh) scaleX(1);}
+    50% {
+    transform: translateX(-30vh) scaleX(-1);}
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
     100% {
     transform: translateX(0) scaleX(-1);}}
 
@@ -346,7 +348,7 @@ body {
   top: 42vh;
   left: 125vh;
   width: 25vh;
-  animation: rævefjæsSwim 11s linear infinite;
+  animation: rævefjæsSwim 10s linear infinite;
 }
   @keyframes rævefjæsSwim {
     0% {
@@ -365,7 +367,7 @@ body {
   top: 77vh;
   right: 32vh;
   width: 18vh;
-  animation: havsneglSwim 20s linear infinite;
+  animation: havsneglSwim 40s linear infinite;
 }
   @keyframes havsneglSwim {
     0% {
@@ -383,7 +385,7 @@ body {
   top: 30vh;
   right: 6vh;
   width: 22vh;
-  animation: paletkirurgSwim 15s linear infinite;
+  animation: paletkirurgSwim 12s linear infinite;
 }
   @keyframes paletkirurgSwim {
     0% {
