@@ -25,14 +25,20 @@ body {
 
 /* Området, hvor alle elementerne placeres */
 /* Området hvor alle elementerne placeres */
+/* Området hvor alle elementerne placeres */
+
 .world {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: min(100vw, 177vh);
+    aspect-ratio: 7479 / 4237;
+    margin: auto;
 }
+/*position: relative gør .world til referencepunkt for elementer, som har position: absolute.*/
+/* width: min(100vw, 177vh); begrænser bredden, så designfladen kan være på skærmen både på brede og mere kvadratiske skærme.*/
+/*aspect-ratio: 7479 / 4237; fortæller browseren, at .world skal beholde præcis samme bredde-højde-forhold som din SVG.*/
+/* margin: auto; hjælper med at centrere fladen vandret.*/
+/* Vi bruger 177vh som en afrundet værdi for at holde designfladen inden for skærmens højde. Fordi aspect-ratio bestemmer forholdet, bliver højden automatisk beregnet ud fra bredden.*/
 
-/*position: relative gør .world til referencepunkt for elementer, som har position: absolute.
-/*overflow: hidden skjuler det, der ligger uden for skærmvinduet.
 
 /* Baggrunden */
 .baggrund {
@@ -42,8 +48,7 @@ body {
     height: 100%;
     z-index: 0;
 }
-/*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.
-
+/*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.*/
 
 
 /* Overskriften */
@@ -59,8 +64,8 @@ h1 {
     color: var(--blaaTekst);
     z-index: 2;
 }
-/*position: absolute; gør at elementet kan placeres frit på skærmen. 
-man bruger top, right, bottom og left til at placere elementet.*/
+/*position: absolute; gør at elementet kan placeres frit på skærmen.*/
+/*man bruger top, right, bottom og left til at placere elementet.*/
 
 /* Den zebrastribede kirurgfisk */
 .Zebrastribet {
