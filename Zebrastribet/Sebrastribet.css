@@ -1,140 +1,133 @@
 
+```css
+/* FARVER */
+
 :root {
     --blaaTekst: #0D3B89;
     --blaaTekstGennemsigtig: #0d3a8981;
 }
 
-.baggrund {
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /*virker ik*/
-}
-/*VW = Viewport width og VH = Viewport height. 1vw = 1% af skærmens bredde og 1vh = 1% af skærmens højde.*/
-/*Viewport width og height er 100% af skærmen.*/
+/* FJERN STANDARDMARGENER */
 
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SELVE SKÆRMEN */
 
 .screen {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* dette skjuler bare den scrollemenu, der ellers normalt vises i bunden af browseren */
-.screen::-webkit-scrollbar {
-  display: none;
-}
+/* VERDENEN, SOM ELEMENTERNE PLACERES I */
 
 .world {
-  position: relative;
-  width: 277.7113vh; /* bredde på baggrunden fundet via AI */
-  height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.baggrund,
-.svommere {
-  position: absolute;
-  inset: 0; /* inset er en shortcut for top, right, bottom, left */
-}
+/* BAGGRUND */
 
 .baggrund {
-  z-index: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
 }
 
-.baggrund img {
-  display: block; /* fjerner det whitespace der nogengange dukker op */
-  width: 100%;
-  height: 100%;
+/* FISK */
+
+.Zebrastribet {
+    position: absolute;
+    left: 8.33%;
+    top: 25%;
+    height: 50vh;
+    width: auto;
+    z-index: 1;
 }
 
-.svommere {
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-}
-
-/* denne kode vælger hver child af .svommere og lader dem blive placeret på specifikke steder på .baggrund (grundet absolute) */
-.svommere > a {
-  position: absolute;
-  display: block;
-  width: 15vh; /* dette gør deres størrelse til en fast værdi ift. viewporten */
-}
-
-
-
-
-
-
-
-
-
+/* OVERSKRIFT */
 
 h1 {
     position: absolute;
-    right: 200px;
-    top: 100px;
+    right: 8.33%;
+    top: 8.33%;
+    margin: 0;
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 6.67vh;
     color: var(--blaaTekst);
-}
-/*position: absolute; gør at elementet kan placeres frit på skærmen. 
-man bruger top, right, bottom og left til at placere elementet.*/
-
-.Zebrastribet{
-    position: absolute;
-    left: 200px;
-    top: 300px;
-    height: 600px;
-    width: auto;
+    z-index: 2;
 }
 
-.LevestedBobbel{
+/* TALEBOBLER */
+
+.LevestedBobbel {
     position: absolute;
-    left: 200px;
-    top: 1000px;
-    height: 200px;
+    left: 8.33%;
+    top: 83.33%;
+    height: 16.67vh;
     width: auto;
+    z-index: 2;
 }
 
-.madBobbel{
+.madBobbel {
     position: absolute;
-    left: 500px;
-    top: 1000px;
-    height: 200px;
+    left: 20.83%;
+    top: 83.33%;
+    height: 16.67vh;
     width: auto;
-}       
-
-.stoerrelseBobbel{
-    position: absolute;
-    left: 800px;
-    top: 1000px;
-    height: 200px;
-    width: auto;
-}   
-
-.alderBobbel{
-    position: absolute;
-    left: 1100px;
-    top: 1000px;
-    height: 200px;
-    width: auto;
+    z-index: 2;
 }
 
-.LukNedBobbel{
+.stoerrelseBobbel {
     position: absolute;
-    left: 1900px;
-    top: 1000px;
-    height: 200px;
+    left: 33.33%;
+    top: 83.33%;
+    height: 16.67vh;
     width: auto;
+    z-index: 2;
 }
 
-.tekstBobbel{
+.alderBobbel {
     position: absolute;
-    left: 1350px;
-    top: 350px;
-    height: 670px;
+    left: 45.83%;
+    top: 83.33%;
+    height: 16.67vh;
     width: auto;
+    z-index: 2;
 }
+
+/* LUK-BOBBEL */
+
+.LukNedBobbel {
+    position: absolute;
+    left: 79.17%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+/* TEKSTBOBBEL */
+
+.tekstBobbel {
+    position: absolute;
+    left: 56.25%;
+    top: 29.17%;
+    height: 55.83vh;
+    width: auto;
+    z-index: 1;
+}
+```
