@@ -196,7 +196,7 @@ body {
 }
 
 .svommere > a.Pindsvinefisk {
-  top: 25vh;
+  top: 35vh;
   right: 65vh;
   width: 22vh;
   animation: pindsvinefiskSwim 40s linear infinite;
@@ -215,7 +215,7 @@ body {
 
 
 .svommere > a.Klovnfisk {
-  top: 28vh;
+  top: 27vh;
   left: 5vh;
   width: 18vh;
   animation: klovnfiskSwim 15s linear infinite;
@@ -382,7 +382,7 @@ body {
     transform: translateX(0) scaleX(1);}}
 
 .svommere > a.Paletkirurg {
-  top: 30vh;
+  top: 27vh;
   right: 6vh;
   width: 22vh;
   animation: paletkirurgSwim 12s linear infinite;
