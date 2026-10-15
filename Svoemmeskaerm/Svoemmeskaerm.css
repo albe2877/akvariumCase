@@ -250,10 +250,58 @@ body {
   top: 77vh;
   right: 32vh;
   width: 18vh;
+  animation: swim 20.5s linear infinite;
 }
+  @keyframes swim {
+    0% {
+    transform: translateX(0) scaleX(1);}
+
+    49.9% {
+    transform: translateX(-60vh) scaleX(1);}
+
+    50% {
+    transform: translateX(-60vh) scaleX(-1);}
+
+    99.9% {
+    transform: translateX(0) scaleX(-1);}
+
+    100% {
+    transform: translateX(0) scaleX(1);}}
 
 .svommere > a.Paletkirurg {
   top: 30vh;
   right: 6vh;
   width: 22vh;
+}
+
+.sprogBoble {
+    position: fixed;
+    width: 90px;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.sprogBoble img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ 
+.storcenterNordLogo {
+    position: fixed;
+    width: 90px;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
 }
