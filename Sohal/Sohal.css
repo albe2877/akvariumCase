@@ -1,0 +1,131 @@
+
+/* FARVER */
+
+:root {
+    --blaaTekst: #0D3B89;
+    --blaaTekstGennemsigtig: #0d3a8981;
+}
+
+/* FJERN STANDARDMARGENER */
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SELVE SKÆRMEN */
+
+.screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* VERDENEN, SOM ELEMENTERNE PLACERES I */
+
+.world {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* BAGGRUND */
+
+.baggrund {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+}
+
+/* FISK */
+
+.Sohal{
+    position: absolute;
+    left: 8.33%;
+    top: 25%;
+    height: 50vh;
+    width: auto;
+    z-index: 1;
+}
+
+/* OVERSKRIFT */
+
+h1 {
+    position: absolute;
+    right: 8.33%;
+    top: 8.33%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 6.67vh;
+    color: var(--blaaTekst);
+    z-index: 2;
+}
+
+/* TALEBOBLER */
+
+.LevestedBobbel {
+    position: absolute;
+    left: 8.33%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+.madBobbel {
+    position: absolute;
+    left: 20.83%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+.stoerrelseBobbel {
+    position: absolute;
+    left: 33.33%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+.alderBobbel {
+    position: absolute;
+    left: 45.83%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+/* LUK-BOBBEL */
+
+.LukNedBobbel {
+    position: absolute;
+    left: 79.17%;
+    top: 83.33%;
+    height: 16.67vh;
+    width: auto;
+    z-index: 2;
+}
+
+/* TEKSTBOBBEL */
+
+.tekstBobbel {
+    position: absolute;
+    left: 56.25%;
+    top: 29.17%;
+    height: 55.83vh;
+    width: auto;
+    z-index: 1;
+}
