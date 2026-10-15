@@ -1,6 +1,22 @@
 
 console.log("Det virker sgu!!:)");
 
+const backgroundMusic = document.querySelector("#baggrundsmusik");
+
+function startBackgroundMusic() {
+    backgroundMusic.play().then(function() {
+        document.removeEventListener("pointerdown", startBackgroundMusic);
+        document.removeEventListener("keydown", startBackgroundMusic);
+    }).catch(function(error) {
+        console.warn("Baggrundsmusikken kunne ikke starte:", error);
+    });
+}
+
+backgroundMusic.play().catch(function() {
+    document.addEventListener("pointerdown", startBackgroundMusic, { once: true });
+    document.addEventListener("keydown", startBackgroundMusic, { once: true });
+});
+
 //const
 //Opret en fast navngivet reference 
 //Du fortæller JavaScript, at du vil gemme noget under et navn.
