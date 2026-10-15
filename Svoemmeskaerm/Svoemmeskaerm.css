@@ -115,6 +115,12 @@ body {
   height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
+  cursor: grab;
+  user-select: none; /* forhindrer at man kan markere tekst når man trækker i skærmen */
+}
+
+.screen.is-dragging {
+  cursor: grabbing;
 }
 
 /* dette skjuler bare den scrollemenu, der ellers normalt vises i bunden af browseren */
