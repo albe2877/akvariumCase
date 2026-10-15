@@ -1,5 +1,31 @@
 //Her kommer start lyden "klik på fiskene for at hører mere"
+// 1. Find lydfilen i HTML
+const klikPaaFiskeneAudio = document.querySelector("#klikPaaFiskeneAudio");
 
+// 2. Afspil lyden én gang
+function afspilKlikPaaFiskene() {
+    console.log("Prøver at afspille lyden");
+
+    klikPaaFiskeneAudio.currentTime = 0;
+
+    klikPaaFiskeneAudio.play().catch(function(error) {
+        console.error("Lyden kunne ikke afspilles:", error);
+    });
+}
+
+// 3. Når lyden er færdig, vent 10 sekunder
+klikPaaFiskeneAudio.addEventListener("ended", function() {
+    console.log("Lyden er færdig. Venter 10 sekunder.");
+
+    setTimeout(function() {
+        afspilKlikPaaFiskene();
+    }, 10000);
+});
+
+// 4. Start første afspilning efter 1 sekund
+setTimeout(function() {
+    afspilKlikPaaFiskene();
+}, 1000);
 
 
 
