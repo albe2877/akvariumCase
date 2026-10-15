@@ -80,3 +80,16 @@ man bruger top, right, bottom og left til at placere elementet.*/
     height: 670px;
     width: auto;
 }
+
+.Zebrastribet {
+    animation: swim 3s ease-in-out infinite;
+}
+
+@keyframes swim {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(35px, -12px);
+    }
+}
