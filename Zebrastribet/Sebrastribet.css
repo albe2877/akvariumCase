@@ -49,13 +49,13 @@ body {
 /* Overskriften */
 h1 {
     position: absolute;
-    right: 8.33vh;
-    top: 8.33vh;
+    right: 15vh;
+    top: 8vh;
     margin: 0;
     text-align: center;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-    font-size: 6.67vh;
+    font-size: 7vh;
     color: var(--blaaTekst);
     z-index: 2;
 }
@@ -65,9 +65,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Den zebrastribede kirurgfisk */
 .Zebrastribet {
     position: absolute;
-    left: 16.67vh;
-    top: 25vh;
-    height: 50vh;
+    left: 5vh;
+    top: 10vh;
+    height: 70vh;
     width: auto;
     z-index: 1;
 }
@@ -75,9 +75,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Boblen med levested */
 .LevestedBobbel {
     position: absolute;
-    left: 16.67vh;
-    top: 83.33vh;
-    height: 16.67vh;
+    left: 5vh;
+    top: 75vh;
+    height: 17vh;
     width: auto;
     z-index: 2;
 }
@@ -85,9 +85,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Boblen med mad */
 .madBobbel {
     position: absolute;
-    left: 41.67vh;
-    top: 83.33vh;
-    height: 16.67vh;
+    left: 30vh;
+    top: 75vh;
+    height: 17vh;
     width: auto;
     z-index: 2;
 }   
@@ -95,9 +95,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Boblen med størrelse */
 .stoerrelseBobbel {
     position: absolute;
-    left: 66.67vh;
-    top: 83.33vh;
-    height: 16.67vh;
+    left: 55vh;
+    top: 75vh;
+    height: 17vh;
     width: auto;
     z-index: 2;
 }
@@ -105,9 +105,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Boblen med alder */
 .alderBobbel {
     position: absolute;
-    left: 91.67vh;
-    top: 83.33vh;
-    height: 16.67vh;
+    left: 80vh;
+    top: 75vh;
+    height: 17vh;
     width: auto;
     z-index: 2;
 }
@@ -115,9 +115,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Boblen der går tilbage til akvariet */
 .LukNedBobbel {
     position: absolute;
-    left: 158.33vh;
-    top: 83.33vh;
-    height: 16.67vh;
+    left: 150vh;
+    top: 75vh;
+    height: 17vh;
     width: auto;
     z-index: 2;
 }
@@ -125,9 +125,9 @@ man bruger top, right, bottom og left til at placere elementet.*/
 /* Tekstboblen med information */
 .tekstBobbel {
     position: absolute;
-    left: 112.5vh;
-    top: 29.17vh;
-    height: 55.83vh;
+    right: 10vh;
+    top: 25vh;
+    height: 55vh;
     width: auto;
     z-index: 1;
 }
