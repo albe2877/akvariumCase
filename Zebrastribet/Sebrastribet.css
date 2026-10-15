@@ -25,21 +25,19 @@ body {
 /*Viewport width og height er 100% af skærmen.*/
 
 /* Området, hvor alle elementerne placeres */
-/* Området hvor alle elementerne placeres */
-/* Området hvor alle elementerne placeres */
-
 .world {
     position: relative;
-    width: 176.52vh;
+    width: 176.52vh; /* fundet via AI */
     height: 100vh;
     margin: 0 auto;
 }
-/*position: relative gør .world til referencepunkt for elementer, som har position: absolute.*/
-/* .world har samme formatforhold som baggrundsbilledet (7479 / 4237).*/
+
+/* position: relative gør .world til referencepunkt for elementer, som har position: absolute. */
+/* .world har samme formatforhold som baggrundsbilledet (7479 / 4237). */
 /* Højden er 100vh, så vh-positionerne måles fra baggrundens top/venstre og følger den.*/
 
 
-/* Baggrunden */
+/* Baggrunden - fylder hele .world */
 .baggrund {
     position: absolute;
     inset: 0;
@@ -47,7 +45,7 @@ body {
     height: 100%;
     z-index: 0;
 }
-/*z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den.*/
+/* z-index: 0 placerer baggrunden på et lag. Vi skal senere sikre, at de andre elementer ligger ovenpå den. */
 
 
 /* Overskriften */
