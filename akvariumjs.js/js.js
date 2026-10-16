@@ -88,7 +88,7 @@ window.addEventListener("mouseup", () => {
 
 /* forsøger at sætte baggrundsmusik ind på startsiden */
 const baggrundsmusik = document.getElementById("baggrundsmusik");
-baggrundsmusik.volume = 0.01; /*sætter lydstyrken lavt, så den ikke overdøver de andre lyde. */
+baggrundsmusik.volume = 0.08; /*sætter lydstyrken lavt, så den ikke overdøver de andre lyde. */
 
 /*sessionStorage bruges til at gemme musikkens position, så den ikke starter forfra når man skifter mellem sider. */
 baggrundsmusik.addEventListener("timeupdate",function() {
@@ -107,6 +107,8 @@ baggrundsmusik.addEventListener("loadedmetadata", function() {
     baggrundsmusik.currentTime = Number(gemTid);
   }
 
+  /* forsøger at afspille musikken, og logger en besked i konsollen, hvis det lykkes
+  */
   baggrundsmusik.play().then(function() {
   console.log("Musikken spiller");
 }).catch(function(feil) {

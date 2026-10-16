@@ -132,7 +132,7 @@ alderBobbel.addEventListener("click", function() {
 
 /* forsøger at sætte baggrundsmusik ind på startsiden */
 const baggrundsmusik = document.getElementById("baggrundsmusik");
-baggrundsmusik.volume = 0.01; /*sætter lydstyrken lavt, så den ikke overdøver de andre lyde. */
+baggrundsmusik.volume = 0.08; /*sætter lydstyrken lavt, så den ikke overdøver de andre lyde. */
 
 /*sessionStorage bruges til at gemme musikkens position, så den ikke starter forfra når man skifter mellem sider. */
 baggrundsmusik.addEventListener("timeupdate",function() {
