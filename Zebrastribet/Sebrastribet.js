@@ -27,6 +27,13 @@ const madAudio = document.querySelector("#madAudio");
 const stoerrelseAudio = document.querySelector("#stoerrelseAudio");
 const alderAudio = document.querySelector("#alderAudio");
 
+// Dette starter vores velkomst lyd når man har trykket ind på fisken
+setTimeout(function() {
+    hejTrykPaaMigAudio.play().catch(function(error) {
+        console.warn("Browseren tillod ikke automatisk afspilning:", error);
+    });
+}, 1000);
+
 
 // Det der kommer nu er vores opskrift. 
 //Vi opretter en funktion som gør noget bestemt. Vi giver den navnet: afspilLyd.
