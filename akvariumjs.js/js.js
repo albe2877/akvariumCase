@@ -30,20 +30,23 @@ const leftButton = document.querySelector(".venstrePil");
 const rightButton = document.querySelector(".hoejrePil");
 /* disse første linjer finder den fastlagte skærm og knapper */
 
-const scrollAmount = 850; /* længden af et scroll med klik */
+const scrollAmount = 850; /* definere længden af et scroll med klik */
 
-/* sætter en max scroll width og disabler knapperne når man når til enderne */
+/* function updateScrollButtons beregner max scroll amount 
+leftbutton.disabled deaktiverer knapperne når man når når til enden af skærmen. */
 function updateScrollButtons() {
   const maxScroll = screen.scrollWidth - screen.clientWidth;
   leftButton.disabled = screen.scrollLeft <= 1;
   rightButton.disabled = screen.scrollLeft >= maxScroll - 1;
 }
 
-/* dette er selve scroll events'ene - henviser tilbage til -scrollAmount og gør overgangen smooth */
+/* behavior smooth giver en glidende overgang når man scroller*/
+/* leftButton.addEventListener og rightButton.addEventListener 
+fortæller browseren at den skal scrolle når man klikker på knapperne */
+/* scrollBy fortæller browseren hvor langt den skal scrolle, og i hvilken retning, eksempelvis 850 px mod venstre */
 leftButton.addEventListener("click", () => {
   screen.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
-
 rightButton.addEventListener("click", () => {
   screen.scrollBy({ left: scrollAmount, behavior: "smooth" });
 });
